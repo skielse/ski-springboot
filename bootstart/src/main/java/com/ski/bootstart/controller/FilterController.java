@@ -12,6 +12,7 @@ public class FilterController {
     @RequestMapping("test")
     public String test() {
         log.info("===========test");
+        log.warn("===========test");
         log.error("===========test");
         return "123111";
     }
