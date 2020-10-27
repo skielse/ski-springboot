@@ -29,7 +29,7 @@ public class TestCode {
             // 获取二进制十六进制互转工具
             HexBinaryAdapter hexBinaryAdapter = new HexBinaryAdapter();
             // 将二进制数组转换为十六进制字符串
-            // 输出结果
+            // 返回结果
             return hexBinaryAdapter.marshal(digest);
         } catch (Exception e) {
             e.printStackTrace();
