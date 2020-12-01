@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Test;
 
 import javax.xml.bind.annotation.adapters.HexBinaryAdapter;
+import java.io.File;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.security.MessageDigest;
@@ -20,7 +21,7 @@ public class TestCode {
     /**
      * MD2加密
      */
-    public  String MD2(String src) {
+    public String MD2(String src) {
         try {
             // 获取MD2加密工具
             MessageDigest md = MessageDigest.getInstance("MD2");
@@ -35,5 +36,14 @@ public class TestCode {
             e.printStackTrace();
         }
         return "";
+    }
+
+    @Test
+    public void TestFileSeparator() {
+        String path = "/abc/123";
+        if (!path.endsWith(File.separator)) {
+            path=path+File.separator;
+        }
+        System.out.println(path);
     }
 }
