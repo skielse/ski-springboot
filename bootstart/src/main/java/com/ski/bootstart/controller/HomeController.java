@@ -18,6 +18,7 @@ public class HomeController {
     @RequestMapping("index")
     public String index() {
       log.info("============= Welcome back home =============");
+        log.error("this is user error");
       return "============= Welcome back home =============";
     }
 }
