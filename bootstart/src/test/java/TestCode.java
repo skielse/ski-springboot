@@ -1,3 +1,6 @@
+import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
+import org.assertj.core.util.Lists;
 import org.junit.jupiter.api.Test;
 
 import javax.xml.bind.annotation.adapters.HexBinaryAdapter;
@@ -5,7 +8,13 @@ import java.io.File;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.security.MessageDigest;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
+@Slf4j
 public class TestCode {
 
     @Test
@@ -45,5 +54,55 @@ public class TestCode {
             path=path+File.separator;
         }
         System.out.println(path);
+    }
+
+    @Test
+    public void TestRemove() {
+        List<TestBean> list = new ArrayList<>();
+        TestBean b1 = new TestBean();
+        b1.setId(1);
+        TestBean b2 = new TestBean();
+        b2.setId(2);
+        TestBean b3 = new TestBean();
+        b3.setId(3);
+        list.add(b1);
+        list.add(b2);
+        list.add(b3);
+        List<Integer> list2 = Lists.newArrayList(2, 3);
+        for (int i = 0; i < list.size(); i++) {
+//            list.removeIf(e -> (e % 2) == 0);
+            list.removeIf(testBean -> list2.contains(testBean.getId()));
+        }
+        System.out.println(list);
+    }
+
+    @Data
+    static
+    class TestBean {
+        Integer id;
+    }
+
+    @Test
+    public void testConcurrentRemoveIf() throws InterruptedException {
+        List<Integer> integers = Lists.newArrayList(1, 2, 3);
+        List<Integer> list2 = Lists.newArrayList(3);
+        ExecutorService executorService = Executors.newFixedThreadPool(3);
+        final CountDownLatch latch = new CountDownLatch(integers.size());
+        for (Integer i : integers) {
+            executorService.submit(() -> {
+                try {
+                    for (Integer integer : integers) {
+                        integers.removeIf(list2::contains);
+                    }
+                    log.info(String.valueOf(integers));
+                } catch (Exception e) {
+                    log.info("", e);
+                } finally {
+                    latch.countDown();
+                }
+            });
+        }
+        latch.await();
+        log.info("finally list is : {}", integers);
     }
 }
