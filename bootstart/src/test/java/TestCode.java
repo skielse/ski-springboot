@@ -51,7 +51,7 @@ public class TestCode {
     public void TestFileSeparator() {
         String path = "/abc/123";
         if (!path.endsWith(File.separator)) {
-            path=path+File.separator;
+            path = path + File.separator;
         }
         System.out.println(path);
     }
@@ -84,7 +84,7 @@ public class TestCode {
 
     @Test
     public void testConcurrentRemoveIf() throws InterruptedException {
-        List<Integer> integers = Lists.newArrayList(1, 2, 3);
+        List<Integer> integers = Lists.newArrayList(1, 2, 3, 4, 5);
         List<Integer> list2 = Lists.newArrayList(3);
         ExecutorService executorService = Executors.newFixedThreadPool(3);
         final CountDownLatch latch = new CountDownLatch(integers.size());
