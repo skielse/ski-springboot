@@ -19,6 +19,6 @@ public class HomeController {
     public String index() {
       log.info("============= Welcome back home =============");
         log.error("this is user error");
-      return "============= Welcome back home developer=============";
+      return "============= Welcome back home =============";
     }
 }
