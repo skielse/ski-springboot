@@ -21,7 +21,7 @@ public class TestCode {
     public void Test() throws UnsupportedEncodingException {
         String str = "0x31";
         str = URLEncoder.encode(str, "utf-8");
-        for (int i = 0; i < 100000000; i++) {
+        for (int i = 0; i < 10; i++) {
             str = MD2(str);
         }
         System.out.println(str);
@@ -56,7 +56,7 @@ public class TestCode {
         System.out.println(path);
     }
 
-    @Test
+   /* @Test
     public void TestRemove() {
         List<TestBean> list = new ArrayList<>();
         TestBean b1 = new TestBean();
@@ -104,5 +104,5 @@ public class TestCode {
         }
         latch.await();
         log.info("finally list is : {}", integers);
-    }
+    }*/
 }
