@@ -21,4 +21,5 @@ public class ApiTest {
         UserService userService = (UserService) beanFactory.getBean("userService");
         userService.queryUserInfo();
     }
+
 }
