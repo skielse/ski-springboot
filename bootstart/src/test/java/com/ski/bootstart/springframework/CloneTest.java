@@ -25,6 +25,7 @@ public class CloneTest {
         target = SerializationUtils.clone(source);
         target.getProps().setName("who");
         log.info(String.valueOf(source));
+        log.info("==========分割线===========");
         log.info(String.valueOf(target));
     }
 }
