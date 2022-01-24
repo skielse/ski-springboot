@@ -1,5 +1,6 @@
 package com.ski.bootstart.springframework;
 
+import com.google.gson.Gson;
 import com.ski.bootstart.springframework.bean.CloneBean;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.SerializationUtils;
@@ -25,7 +26,10 @@ public class CloneTest {
         target = SerializationUtils.clone(source);
         target.getProps().setName("who");
         log.info(String.valueOf(source));
+        Gson gson = new Gson();
+        log.info(gson.toJson(source));
         log.info("==========分割线===========");
         log.info(String.valueOf(target));
+        log.info(gson.toJson(target));
     }
 }
