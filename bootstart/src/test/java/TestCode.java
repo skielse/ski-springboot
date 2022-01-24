@@ -56,7 +56,7 @@ public class TestCode {
         System.out.println(path);
     }
 
-   /* @Test
+    @Test
     public void TestRemove() {
         List<TestBean> list = new ArrayList<>();
         TestBean b1 = new TestBean();
@@ -81,7 +81,7 @@ public class TestCode {
     class TestBean {
         Integer id;
     }
-
+/*
     @Test
     public void testConcurrentRemoveIf() throws InterruptedException {
         List<Integer> integers = Lists.newArrayList(1, 2, 3, 4, 5);
