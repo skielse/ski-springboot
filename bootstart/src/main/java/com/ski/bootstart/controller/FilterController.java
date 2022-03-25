@@ -17,6 +17,6 @@ public class FilterController {
         log.info("===========test");
         log.warn("===========test");
         log.error("===========test");
-        return "123111";
+        throw new RuntimeException("wzj test ex");
     }
 }
