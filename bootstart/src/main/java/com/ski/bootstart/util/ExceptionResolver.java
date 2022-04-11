@@ -1,5 +1,6 @@
 package com.ski.bootstart.util;
 
+import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerExceptionResolver;
@@ -21,19 +22,22 @@ import java.util.Map;
 public class ExceptionResolver implements HandlerExceptionResolver {
     @Override
     public ModelAndView resolveException(HttpServletRequest httpServletRequest, HttpServletResponse response, Object o, Exception e) {
-        log.error("into ExceptionResolver:", e);
+        log.info("into ExceptionResolver:", e);
         response.setContentType("application/json;charset=UTF-8");
         try {
             PrintWriter writer = response.getWriter();
-
-            Map map = new HashMap<>();
+            Gson gson = new Gson();
+            Map<Object, Object> map = new HashMap<>(1);
             map.put("ex", e.getMessage());
-            writer.write(map.toString());
+            writer.write( gson.toJson(map));
             writer.flush();
             writer.close();
         } catch (IOException ex) {
             log.error("exceptionResolver ioe:", ex);
         }
-        return new ModelAndView();
+        //直接返回,流程结束
+         return new ModelAndView();
+        //不指定mv会继续走流程,虽然已经输出流给请求端,会触发TestFilter的try catch
+        //return null;
     }
 }

@@ -13,7 +13,7 @@ public class LogFilter extends Filter<ILoggingEvent> {
     @Override
     public FilterReply decide(ILoggingEvent iLoggingEvent) {
         if (iLoggingEvent.getLevel().isGreaterOrEqual(Level.ERROR)) {
-            System.out.println("+++++++++i get it++++++++");
+            System.out.println("+++++++++i get one error++++++++"+iLoggingEvent.getMessage());
         }
         return FilterReply.NEUTRAL;
     }
