@@ -27,9 +27,9 @@ public class CloneTest {
         target.getProps().setName("who");
         log.info(String.valueOf(source));
         Gson gson = new Gson();
-        log.info(gson.toJson(source));
+        log.info("source:{}",gson.toJson(source));
         log.info("==========分割线===========");
         log.info(String.valueOf(target));
-        log.info(gson.toJson(target));
+        log.info("target:{}",gson.toJson(target));
     }
 }
