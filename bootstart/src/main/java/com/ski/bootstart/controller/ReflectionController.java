@@ -17,8 +17,16 @@ public class ReflectionController {
     @RequestMapping("/class")
     public Object classInfo() {
         Class<ReflectionController> aClass = ReflectionController.class;
-        log.info("class is {}", aClass);
+        log.info("class is:-------== {}", aClass);
         return aClass;
+    }
+
+    @RequestMapping("/classloader")
+    public Object classloaderInfo() {
+        Class<ReflectionController> aClass = ReflectionController.class;
+        ClassLoader classLoader = aClass.getClassLoader();
+        log.info("classLoader is {}", classLoader);
+        return classLoader;
     }
 
     private String getStringTimeBySecond(Integer playerTime) {
