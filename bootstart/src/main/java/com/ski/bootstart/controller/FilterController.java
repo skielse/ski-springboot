@@ -19,4 +19,12 @@ public class FilterController {
         log.error("===========test");
         throw new RuntimeException("wzj test ex");
     }
+
+    @RequestMapping("test2")
+    public Object test2() {
+        log.info("===========test");
+        log.warn("===========test");
+        log.error("===========test");
+        return "this is result";
+    }
 }
