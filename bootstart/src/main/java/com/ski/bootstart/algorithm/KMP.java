@@ -1,9 +1,12 @@
 package com.ski.bootstart.algorithm;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * @author wangzijie
  * @date 2022/6/15
  */
+@Slf4j
 public class KMP {
 
     void kmpNext(char[] patt, int[] next)
@@ -29,4 +32,7 @@ public class KMP {
         }
     }
 
+    public static void main(String[] args) {
+        log.info("==========test begin==========");
+    }
 }
