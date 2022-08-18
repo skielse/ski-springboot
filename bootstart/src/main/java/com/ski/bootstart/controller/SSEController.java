@@ -30,9 +30,9 @@ public class SSEController {
     @ResponseBody
     @GetMapping(path = "subscribe", produces = {MediaType.TEXT_EVENT_STREAM_VALUE})
     public SseEmitter push(String id) throws IOException {
-        // 超时时间设置为3s，用于演示客户端自动重连
+        // 超时时间设置为30s，用于演示客户端自动重连
         SseEmitter sseEmitter = new SseEmitter(30000L);
-        // 设置前端的重试时间为1s
+        // 设置前端的重试时间为10s
         sseEmitter.send(SseEmitter.event().reconnectTime(10000).data("连接成功"));
         sseCache.put(id, sseEmitter);
         log.info("add " + id);
