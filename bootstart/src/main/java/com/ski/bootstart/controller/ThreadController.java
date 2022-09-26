@@ -38,8 +38,8 @@ public class ThreadController {
         log.info(LocalDateTime.now().toString() + "--->主线程开始");
         Callable<String> callable = () -> {
             String result = "return callable";
-            // 执行业务耗时 5s
-            Thread.sleep(5000);
+            // 执行业务耗时 3s
+            Thread.sleep(3000);
             log.info(LocalDateTime.now().toString() + "--->子任务线程(" + Thread.currentThread().getName() + ")");
             return result;
         };
