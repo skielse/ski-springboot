@@ -1,5 +1,6 @@
 package com.ski.bootstart.util;
 
+import cn.hutool.core.thread.ThreadFactoryBuilder;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.CollectionUtils;
 import reactor.core.publisher.Flux;
@@ -12,8 +13,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
@@ -24,7 +24,10 @@ import java.util.function.Supplier;
 @Slf4j
 public class ReactorUtils {
 
-    private static final ExecutorService executorService = Executors.newCachedThreadPool();
+    static ThreadFactory namedThreadFactory = new ThreadFactoryBuilder().setNamePrefix("ReactorUtils-pool").build();
+    static ExecutorService executorService = new ThreadPoolExecutor(1, 1,
+            0L, TimeUnit.MILLISECONDS,
+            new LinkedBlockingQueue<Runnable>(1024), namedThreadFactory, new ThreadPoolExecutor.AbortPolicy());
 
     private static final int DEFAULT_LIST_LENGTH = 20;
 
@@ -53,7 +56,6 @@ public class ReactorUtils {
         }
         return supplier.get();
     }
-
 
 
     /**
