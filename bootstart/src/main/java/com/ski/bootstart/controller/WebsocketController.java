@@ -1,8 +1,6 @@
 package com.ski.bootstart.controller;
 
-import com.ski.bootstart.util.MyWebSocketClient;
 import com.ski.bootstart.util.WebsocketUtil;
-import lombok.Synchronized;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
