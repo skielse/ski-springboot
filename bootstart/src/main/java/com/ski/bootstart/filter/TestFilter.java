@@ -18,10 +18,14 @@ public class TestFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         try {
-            log.info("#######doTestFilter#######");
+            doMyFilter(servletRequest, servletResponse);
             filterChain.doFilter(servletRequest, servletResponse);
         } catch (Exception e) {
             log.error("TestFilter catch ex:", e);
         }
+    }
+
+    private void doMyFilter(ServletRequest servletRequest, ServletResponse servletResponse) {
+        log.info("#######doTestFilter#######");
     }
 }
