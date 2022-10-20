@@ -21,8 +21,8 @@ public class MDCUtils {
             if (StringUtils.isNotBlank(key)) {
                 value = MDC.get(key);
             }
-        } catch (Exception var3) {
-            var3.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
         return value;
@@ -36,8 +36,8 @@ public class MDCUtils {
                 value = MDC.get(key);
                 value = value != null ? value : defaultValue;
             }
-        } catch (Exception var4) {
-            var4.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
         return value;
@@ -48,8 +48,8 @@ public class MDCUtils {
             if (StringUtils.isNotEmpty(key) && value != null) {
                 MDC.put(key, value);
             }
-        } catch (Exception var3) {
-            var3.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
     }
@@ -57,8 +57,8 @@ public class MDCUtils {
     public static Map<String, String> getCopyMDC() {
         try {
             return MDC.getCopyOfContextMap();
-        } catch (Exception var1) {
-            var1.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
             return null;
         }
     }
