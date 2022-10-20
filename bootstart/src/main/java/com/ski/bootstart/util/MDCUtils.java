@@ -30,7 +30,6 @@ public class MDCUtils {
 
     public static String get(String key, String defaultValue) {
         String value = null;
-
         try {
             if (StringUtils.isNotBlank(key)) {
                 value = MDC.get(key);
