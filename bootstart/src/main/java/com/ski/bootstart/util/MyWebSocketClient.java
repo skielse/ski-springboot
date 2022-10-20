@@ -13,10 +13,12 @@ import java.util.Map;
 
 /**
  * 自定义WebSocketClient
+ *
+ * @author ski
  */
 public class MyWebSocketClient extends WebSocketClient {
     public int bytes;
-    public ArrayList param;
+    public ArrayList<Object> param;
     public String voiceUrl;
     private Map<String, Object> result;
     private MessageHandler messageHandler;
@@ -30,9 +32,10 @@ public class MyWebSocketClient extends WebSocketClient {
 
     public interface MessageHandler {
         /**
+         * 消息处理过程
          * @param message 返回消息
          */
-        public void handleMessage(String message);
+        void handleMessage(String message);
     }
 
     @Override
@@ -46,9 +49,6 @@ public class MyWebSocketClient extends WebSocketClient {
                 this.send(buffer);
             }
             fs.close();
-        } catch (FileNotFoundException e) {
-
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
