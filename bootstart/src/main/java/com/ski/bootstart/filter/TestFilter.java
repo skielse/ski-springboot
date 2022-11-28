@@ -26,6 +26,6 @@ public class TestFilter implements Filter {
     }
 
     private void doMyFilter(ServletRequest servletRequest, ServletResponse servletResponse) {
-        log.info("#######doTestFilter#######");
+        log.info("#######   doTestFilter  #######");
     }
 }
