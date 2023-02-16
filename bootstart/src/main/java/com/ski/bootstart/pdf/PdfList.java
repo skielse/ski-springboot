@@ -17,13 +17,13 @@ import java.io.IOException;
  * @author wangzijie
  * @date 2023/2/6
  */
-public class PdfRickAstley {
+public class PdfList {
     public static final String DEST = "/Users/wangzijie/logs/itextpdf/results/chapter01/rick_astley.pdf";
 
     public static void main(String args[]) throws IOException {
         File file = new File(DEST);
         file.getParentFile().mkdirs();
-        new PdfRickAstley().createPdf(DEST);
+        new PdfList().createPdf(DEST);
     }
 
     public void createPdf(String dest) throws IOException {
