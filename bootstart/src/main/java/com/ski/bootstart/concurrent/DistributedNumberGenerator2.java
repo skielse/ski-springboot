@@ -48,7 +48,7 @@ public class DistributedNumberGenerator2 {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        DistributedNumberGenerator generator = new DistributedNumberGenerator();
+        DistributedNumberGenerator2 generator = new DistributedNumberGenerator2();
         for (int i = 0; i < 10; i++) {
             int threadNum = i + 1;
             new Thread(() -> {
