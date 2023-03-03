@@ -28,6 +28,10 @@ public class DistributedNumberGenerator2 {
         redissonClient = Redisson.create(config);
     }
 
+    /**
+     * 获取分布式锁 处理next值
+     * @return next值
+     */
     public long getNextNumber() {
         RLock lock = redissonClient.getLock(KEY);
         try {
