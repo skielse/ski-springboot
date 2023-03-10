@@ -60,7 +60,7 @@ public class DistributedNumberGenerator2 {
                     long number = generator.getNextNumber();
                     System.out.printf("Thread %d: %d%n", threadNum, number);
                     try {
-                        Thread.sleep(1000);
+                        Thread.sleep(1500);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
