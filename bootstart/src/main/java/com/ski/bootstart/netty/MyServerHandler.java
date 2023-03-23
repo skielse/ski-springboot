@@ -17,10 +17,14 @@ public class MyServerHandler extends ChannelInboundHandlerAdapter {
     public void channelRead(ChannelHandlerContext ctx, Object msg) {
         ByteBuf in = (ByteBuf) msg;
         try {
+            StringBuilder info = new StringBuilder();
             while (in.isReadable()) {
-                log.info("msg:>>>>>>{}", (char) in.readByte());
+                String bytes = String.valueOf((char) in.readByte());
+                log.info("msg:>>>>>>{}", bytes);
+                info.append(bytes);
                 System.out.flush();
             }
+            log.info("complete msg:>>>>>>{}", info);
         } finally {
             ReferenceCountUtil.release(msg);
         }
