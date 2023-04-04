@@ -33,7 +33,6 @@ public class MyClient {
                             ch.pipeline().addLast(new MyClientHandler());
                         }
                     });
-
             ChannelFuture f = b.connect(host, port).sync();
             f.channel().closeFuture().sync();
         } finally {
@@ -43,7 +42,7 @@ public class MyClient {
 
     public static void main(String[] args) throws Exception {
         String host = "localhost";
-        int port = 8888;
+        int port = 65151;
         new MyClient(host, port).run();
     }
 }
