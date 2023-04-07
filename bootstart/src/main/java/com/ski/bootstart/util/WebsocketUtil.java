@@ -87,7 +87,7 @@ public class WebsocketUtil {
         String stop = "{"
                 + "\"cmd\":\"stop\""
                 + "}";
-        ArrayList params = new ArrayList();
+        ArrayList<String> params = new ArrayList<>(3);
         params.add(connect);
         params.add(start);
         params.add(stop);
@@ -98,13 +98,13 @@ public class WebsocketUtil {
         return (int) Math.round(Math.random() * (count));
     }
 
-    private static String charString = "abcdefghijklmnopqrstuvwxyz123456789";
+    private static final String CHAR_STRING = "abcdefghijklmnopqrstuvwxyz123456789";
 
     private static String getRandomString(int length) {
-        StringBuffer sb = new StringBuffer();
-        int len = charString.length();
+        StringBuilder sb = new StringBuilder();
+        int len = CHAR_STRING.length();
         for (int i = 0; i < length; i++) {
-            sb.append(charString.charAt(getRandom(len - 1)));
+            sb.append(CHAR_STRING.charAt(getRandom(len - 1)));
         }
         return sb.toString();
     }
