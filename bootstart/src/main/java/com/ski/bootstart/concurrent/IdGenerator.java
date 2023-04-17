@@ -9,6 +9,7 @@ public class IdGenerator {
     private static final long START_TIME = 1609459200000L;
     private static final long WORKER_ID_BITS = 10L;
     private static final long MAX_WORKER_ID = ~(-1L << WORKER_ID_BITS);
+
     private static final long SEQUENCE_BITS = 12L;
     private static final long WORKER_ID_SHIFT = SEQUENCE_BITS;
     private static final long TIMESTAMP_SHIFT = WORKER_ID_BITS + SEQUENCE_BITS;
