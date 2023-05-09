@@ -45,6 +45,10 @@ public class MyServer {
         }
     }
 
+    /*
+      连接到服务器即可测试文本输入
+      telnet localhost 65150
+     */
     public static void main(String[] args) throws Exception {
         int port = 65150;
         new MyServer(port).run();
