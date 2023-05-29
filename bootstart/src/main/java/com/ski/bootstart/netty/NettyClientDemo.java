@@ -14,8 +14,6 @@ import io.netty.util.CharsetUtil;
 import javax.swing.*;
 import java.awt.*;
 import java.net.InetSocketAddress;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class NettyClientDemo extends JFrame {
