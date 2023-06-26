@@ -1,9 +1,12 @@
 package com.ski.bootstart.algorithm;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * @author wangzijie
  * @date 2023/6/12
  */
+@Slf4j
 public class TomohikoSakamoto {
 
     public static int dow(int y, int m, int d) {
@@ -16,6 +19,6 @@ public class TomohikoSakamoto {
 
     public static void main(String[] args) {
         int dow = dow(2023, 6, 10);
-        System.out.println(dow);
+        log.info("day of week is : {}", dow);
     }
 }
