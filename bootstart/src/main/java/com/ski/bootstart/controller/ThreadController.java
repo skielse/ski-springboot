@@ -35,15 +35,15 @@ public class ThreadController {
      */
     @GetMapping("callable")
     public Callable<String> callable() {
-        log.info(LocalDateTime.now().toString() + "--->主线程开始");
+        log.info(LocalDateTime.now() + "--->主线程开始");
         Callable<String> callable = () -> {
             String result = "return callable";
             // 执行业务耗时 3s
             Thread.sleep(3000);
-            log.info(LocalDateTime.now().toString() + "--->子任务线程(" + Thread.currentThread().getName() + ")");
+            log.info(LocalDateTime.now() + "--->子任务线程(" + Thread.currentThread().getName() + ")");
             return result;
         };
-        log.info(LocalDateTime.now().toString() + "--->主线程结束");
+        log.info(LocalDateTime.now() + "--->主线程结束");
         return callable;
     }
 
