@@ -29,7 +29,7 @@ public class HomeController {
         Gson gson = new Gson();
         HomePage page = new HomePage();
         page.setId(1);
-        page.setName("Jordan");
+        page.setName("Michael Jordan");
         return gson.toJson(page);
     }
 
