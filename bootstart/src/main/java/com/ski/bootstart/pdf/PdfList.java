@@ -20,7 +20,7 @@ import java.io.IOException;
 public class PdfList {
     public static final String DEST = "/Users/wangzijie/logs/itextpdf/results/chapter01/rick_astley.pdf";
 
-    public static void main(String args[]) throws IOException {
+    public static void main(String[] args) throws IOException {
         File file = new File(DEST);
         file.getParentFile().mkdirs();
         new PdfList().createPdf(DEST);
@@ -43,7 +43,7 @@ public class PdfList {
         // Create a List
         List list = new List()
                 .setSymbolIndent(12)
-                .setListSymbol("\u2022")
+                .setListSymbol("•")
                 .setFont(font);
         // Add ListItem objects
         list.add(new ListItem("Never gonna give you up"))
