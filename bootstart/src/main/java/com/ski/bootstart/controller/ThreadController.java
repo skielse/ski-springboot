@@ -52,7 +52,7 @@ public class ThreadController {
         try {
             TimeUnit.SECONDS.sleep(10);
         } catch (InterruptedException e) {
-            log.error("something error:", e);
+            log.error("doBusiness something error:", e);
         }
         return UUID.randomUUID().toString();
     }
