@@ -27,7 +27,7 @@ public class PowXToN {
 
     public static void main(String[] args) {
         PowXToN powXToN = new PowXToN();
-        double myPow = powXToN.myPow(2, 5);
+        double myPow = powXToN.myPow(4, 5);
         System.out.println("myPow=" + myPow);
     }
 }
