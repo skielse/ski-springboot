@@ -1,3 +1,5 @@
+package com.ski.bootstart.algorithm;
+
 /**
  * @author wangzijie
  * @date 2023/12/15
