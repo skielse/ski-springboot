@@ -55,6 +55,7 @@ public class NQueen {
             char[] row = new char[n];
             Arrays.fill(row, '.');
             row[queens[i]] = 'Q';
+
             board.add(new String(row));
         }
         return board;
