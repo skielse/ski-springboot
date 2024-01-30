@@ -38,9 +38,7 @@ public class MergeTwoListsTest {
 
         ListNode l2 = new ListNode(2);
         ListNode l2_next = new ListNode(3);
-//        ListNode l2_next_next = new ListNode(1);
         l2.next = l2_next;
-//        l2_next.next = l2_next_next;
 
         ListNode merged = MergeTwoLists.mergeTwoLists(l1, l2);
         Assertions.assertEquals(1, merged.val);
