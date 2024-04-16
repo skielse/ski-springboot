@@ -3,7 +3,7 @@ package com.ski.bootstart.algorithm;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2022/6/15
  */
 @Slf4j

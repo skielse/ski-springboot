@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2021/9/1
  */
 public class BeanFactory {

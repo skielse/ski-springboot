@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2024/1/19
  */
 public class MergeTwoListsTest {

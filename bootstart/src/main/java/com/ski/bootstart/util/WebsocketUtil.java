@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.Map;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2021/9/7
  */
 public class WebsocketUtil {
@@ -111,7 +111,7 @@ public class WebsocketUtil {
 
     public static void main(String[] args) {
         String refText = "where are you from";
-        String voiceUrl = "/Users/wangzijie/Downloads/0d778f1a434c4451a54907b753e964ab.mp3";
+        String voiceUrl = "/Users/ski/Downloads/0d778f1a434c4451a54907b753e964ab.mp3";
         String type = "sent.eval";
 //        STWebsocketAPI(voiceUrl, refText, type);
         /*模拟阻塞*/

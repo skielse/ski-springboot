@@ -5,7 +5,7 @@ import com.ski.spring02.beans.factory.BeanFactory;
 import com.ski.spring02.beans.factory.config.BeanDefinition;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2021/10/13
  */
 public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements BeanFactory {

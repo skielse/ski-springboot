@@ -1,7 +1,7 @@
 package com.ski.bootstart.algorithm;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2024/2/20
  */
 public class CanJump {

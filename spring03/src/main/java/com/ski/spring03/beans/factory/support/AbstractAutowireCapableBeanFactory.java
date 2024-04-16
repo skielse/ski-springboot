@@ -7,7 +7,7 @@ import com.ski.spring03.beans.factory.config.BeanDefinition;
 import java.lang.reflect.Constructor;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2021/12/21
  */
 public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFactory {

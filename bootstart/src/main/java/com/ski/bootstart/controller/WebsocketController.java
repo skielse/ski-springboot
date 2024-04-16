@@ -10,7 +10,7 @@ import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2021/9/7
  */
 @Slf4j
@@ -21,7 +21,7 @@ public class WebsocketController {
     @RequestMapping("test")
     public String test() {
         String refText = "where are you from";
-        String voiceUrl = "/Users/wangzijie/Downloads/0d778f1a434c4451a54907b753e964ab.mp3";
+        String voiceUrl = "/Users/ski/Downloads/0d778f1a434c4451a54907b753e964ab.mp3";
         String type = "sent.eval";
         BlockingQueue<String> queue = new SynchronousQueue<>(true);
         try {

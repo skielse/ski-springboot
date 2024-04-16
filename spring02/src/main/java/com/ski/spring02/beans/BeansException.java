@@ -3,7 +3,7 @@ package com.ski.spring02.beans;
 /**
  * 定义 Bean 异常
  *
- * @author wangzijie
+ * @author ski
  * @date 2021/10/13
  */
 public class BeansException extends RuntimeException {

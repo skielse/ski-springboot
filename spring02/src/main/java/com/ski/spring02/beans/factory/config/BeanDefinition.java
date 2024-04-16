@@ -1,7 +1,7 @@
 package com.ski.spring02.beans.factory.config;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2021/10/13
  */
 public class BeanDefinition {

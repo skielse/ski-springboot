@@ -8,7 +8,7 @@ import io.netty.util.CharsetUtil;
 import io.netty.util.ReferenceCountUtil;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2023/3/14
  */
 public class MyClientHandler extends ChannelInboundHandlerAdapter {

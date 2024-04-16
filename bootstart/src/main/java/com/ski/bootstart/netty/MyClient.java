@@ -15,7 +15,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2023/3/14
  */
 public class MyClient {

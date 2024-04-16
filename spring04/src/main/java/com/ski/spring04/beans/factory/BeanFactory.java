@@ -3,7 +3,7 @@ package com.ski.spring04.beans.factory;
 import com.ski.spring04.beans.BeansException;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2022/2/25
  */
 public interface BeanFactory {

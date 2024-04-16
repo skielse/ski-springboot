@@ -1,7 +1,7 @@
 package com.ski.bootstart.algorithm;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2023/12/15
  */
 public class PowXToN {

@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2021/10/13
  */
 public class DefaultSingletonBeanRegistry implements SingletonBeanRegistry {

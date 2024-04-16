@@ -7,7 +7,7 @@ import org.apache.kafka.common.serialization.StringSerializer;
 import java.util.Properties;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2022/6/21
  */
 public class KafkaProducerClient implements Runnable {

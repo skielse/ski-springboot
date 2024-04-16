@@ -3,7 +3,7 @@ package com.ski.bootstart.algorithm;
 import java.util.*;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2024/1/3
  */
 public class NQueen {

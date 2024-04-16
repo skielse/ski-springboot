@@ -1,7 +1,7 @@
 package com.ski.spring03.bean;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2021/12/21
  */
 public class UserService {

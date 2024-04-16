@@ -6,7 +6,7 @@ import com.ski.spring02.beans.factory.support.DefaultListableBeanFactory;
 import org.junit.Test;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2021/10/13
  */
 public class ApiTest {

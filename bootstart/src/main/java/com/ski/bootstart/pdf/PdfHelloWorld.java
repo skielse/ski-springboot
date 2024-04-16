@@ -9,12 +9,12 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2023/1/30
  */
 public class PdfHelloWorld {
 
-    public static final String DEST = "/Users/wangzijie/logs/itextpdf/results/chapter01/hello_world.pdf";
+    public static final String DEST = "/Users/ski/logs/itextpdf/results/chapter01/hello_world.pdf";
 
     public static void main(String args[]) throws IOException {
         File file = new File(DEST);

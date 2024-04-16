@@ -4,7 +4,7 @@ import com.ski.bootstart.springframework.bean.UserService;
 import org.junit.jupiter.api.Test;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2021/9/1
  */
 public class ApiTest {

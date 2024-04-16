@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.*;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2023/11/21
  * 两个字符串互为字母异位词，当且仅当两个字符串包含的字母相同。
  * 同一组字母异位词中的字符串具备相同点，可以使用相同点作为一组字母异位词的标志，使用哈希表存储每一组字母异位词，

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2022/2/25
  */
 public class PropertyValues {

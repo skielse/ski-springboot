@@ -1,7 +1,7 @@
 package com.ski.bootstart.algorithm;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2024/2/6
  */
 public class MaxSubArray {

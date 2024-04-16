@@ -1,7 +1,7 @@
 package com.ski.bootstart.algorithm;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2023/7/18
  */
 public class BoyerMooreVote {

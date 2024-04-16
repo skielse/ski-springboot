@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2024/1/12
  */
 public class ThreeSum {

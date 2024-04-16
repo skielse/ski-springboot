@@ -1,7 +1,7 @@
 package com.ski.bootstart.util;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2023/4/17
  */
 class Node {

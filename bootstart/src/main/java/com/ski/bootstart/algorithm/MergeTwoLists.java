@@ -1,7 +1,7 @@
 package com.ski.bootstart.algorithm;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2024/1/19
  */
 public class MergeTwoLists {

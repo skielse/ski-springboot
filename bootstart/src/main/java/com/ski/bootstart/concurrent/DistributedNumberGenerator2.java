@@ -9,7 +9,7 @@ import org.redisson.config.Config;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2023/2/21
  */
 public class DistributedNumberGenerator2 {

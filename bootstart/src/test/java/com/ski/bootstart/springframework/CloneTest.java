@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.BeanUtils;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2021/11/3
  */
 @Slf4j

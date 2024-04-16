@@ -1,7 +1,7 @@
 package com.ski.bootstart.concurrent;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2023/2/21
  */
 public class IdGenerator {

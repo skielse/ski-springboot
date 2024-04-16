@@ -11,7 +11,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2023/3/14
  */
 public class MyServer {

@@ -14,11 +14,11 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2023/2/6
  */
 public class PdfList {
-    public static final String DEST = "/Users/wangzijie/logs/itextpdf/results/chapter01/rick_astley.pdf";
+    public static final String DEST = "/Users/ski/logs/itextpdf/results/chapter01/rick_astley.pdf";
 
     public static void main(String[] args) throws IOException {
         File file = new File(DEST);

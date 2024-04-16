@@ -8,7 +8,7 @@ import org.springframework.cglib.proxy.NoOp;
 import java.lang.reflect.Constructor;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2021/12/21
  */
 public class CglibSubclassingInstantiationStrategy implements InstantiationStrategy {

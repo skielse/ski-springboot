@@ -3,7 +3,7 @@ package com.ski.spring04.beans.factory.config;
 import com.ski.spring04.beans.PropertyValues;
 
 /**
- * @author wangzijie
+ * @author ski
  * @date 2022/2/25
  */
 public class BeanDefinition {

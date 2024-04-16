@@ -6,7 +6,7 @@ import ch.qos.logback.core.filter.Filter;
 import ch.qos.logback.core.spi.FilterReply;
 
 /**
- * @author wangzijie
+ * @author ski
  */
 public class LogFilter extends Filter<ILoggingEvent> {
 
