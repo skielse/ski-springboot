@@ -39,4 +39,9 @@ public class RegularMatching {
         }
         return s.charAt(i - 1) == p.charAt(j - 1);
     }
+
+
+    public static void main(String[] args) {
+
+    }
 }
