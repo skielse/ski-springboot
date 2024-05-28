@@ -20,7 +20,7 @@ public class LengthOfLastWord {
     }
 
     public static void main(String[] args) {
-        String str = "Hello World World";
+        String str = "Hello World World test";
         LengthOfLastWord lengthOfLastWord = new LengthOfLastWord();
         System.out.println("lengthOfLastWord=" + lengthOfLastWord.lengthOfLastWord(str));
     }
