@@ -1,9 +1,12 @@
 package com.ski.bootstart.algorithm;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * @author ski
  * @date 2024/5/8
  */
+@Slf4j
 public class LengthOfLastWord {
 
     public int lengthOfLastWord(String s) {
@@ -22,6 +25,6 @@ public class LengthOfLastWord {
     public static void main(String[] args) {
         String str = "Hello World World test";
         LengthOfLastWord lengthOfLastWord = new LengthOfLastWord();
-        System.out.println("lengthOfLastWord=" + lengthOfLastWord.lengthOfLastWord(str));
+        log.info("lengthOfLastWord={}", lengthOfLastWord.lengthOfLastWord(str));
     }
 }
