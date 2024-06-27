@@ -21,8 +21,8 @@ public class BoyerMooreVote {
     }
 
     public static void main(String[] args) {
-        int[] ints = {2, 2, 2, 3, 5, 2, 6};
-        int result = vote(ints);
+        int[] nums = {2, 4, 4, 2, 3, 5, 2, 6};
+        int result = vote(nums);
         System.out.println("result = " + result);
     }
 }
