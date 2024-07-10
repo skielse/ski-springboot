@@ -1,9 +1,12 @@
 package com.ski.bootstart.algorithm;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * @author ski
  * @date 2024/7/4
  */
+@Slf4j
 public class Divide {
     public int divide(int dividend, int divisor) {
         // 考虑被除数为最小值的情况
@@ -84,7 +87,10 @@ public class Divide {
 
     public static void main(String[] args) {
         Divide divide = new Divide();
-        int i = divide.divide(12, 3);
-        System.out.println(i);
+        int dividend = 10;
+        int divisor = 3;
+        int i = divide.divide(dividend, divisor);
+        log.info("{} / {} = {}", dividend, divisor, i);
     }
+
 }
