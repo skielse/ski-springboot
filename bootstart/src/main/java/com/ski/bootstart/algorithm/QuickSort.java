@@ -1,7 +1,7 @@
 package com.ski.bootstart.algorithm;
 
 /**
- * @author wangzijie
+ * @author skielse
  * @date 2024/6/11
  */
 public class QuickSort {
