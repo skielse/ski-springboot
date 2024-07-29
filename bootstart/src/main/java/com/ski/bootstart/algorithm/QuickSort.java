@@ -10,8 +10,8 @@ public class QuickSort {
 
         int[] nums = new int[]{4, 2, 3, 1, 8, 6, 7, 5, 9, 10};
         quickSort(nums, 0, nums.length - 1);
-        for (int i = 0; i < nums.length; i++) {
-            System.out.println(nums[i]);
+        for (int num : nums) {
+            System.out.println(num);
         }
     }
 
