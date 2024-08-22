@@ -1,9 +1,12 @@
 package com.ski.bootstart.algorithm;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * @author ski
  * @date 2024/8/9
  */
+@Slf4j
 public class MedianSortedArrays {
 
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
@@ -61,6 +64,13 @@ public class MedianSortedArrays {
                 index2 = newIndex2 + 1;
             }
         }
+    }
+
+    public static void main(String[] args) {
+        int[] nums1 = {1, 2};
+        int[] nums2 = {3, 4};
+        MedianSortedArrays medianSortedArrays = new MedianSortedArrays();
+        log.info("==={}",medianSortedArrays.findMedianSortedArrays(nums1, nums2));
     }
 }
 
