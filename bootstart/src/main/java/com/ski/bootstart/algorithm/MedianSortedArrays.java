@@ -70,7 +70,7 @@ public class MedianSortedArrays {
         int[] nums1 = {1, 2};
         int[] nums2 = {3, 4, 5, 7, 9, 11};
         MedianSortedArrays medianSortedArrays = new MedianSortedArrays();
-        log.info("===={} and {} median======{}", nums1, nums2, medianSortedArrays.findMedianSortedArrays(nums1, nums2));
+        log.info("==== {} and {} ==== median ======{}", nums1, nums2, medianSortedArrays.findMedianSortedArrays(nums1, nums2));
     }
 }
 
