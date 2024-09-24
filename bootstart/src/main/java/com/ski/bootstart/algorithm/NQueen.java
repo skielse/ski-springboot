@@ -59,4 +59,14 @@ public class NQueen {
         }
         return board;
     }
+
+    public static void main(String[] args) {
+        NQueen solution = new NQueen();
+
+        // Test cases
+        int[] testCases = {0, 1, 2, 4, 5, 8};
+        for (int n : testCases) {
+            System.out.println("Number of solutions for " + n + " queens problem: " + solution.solveNQueens(n));
+        }
+    }
 }
