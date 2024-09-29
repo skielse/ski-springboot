@@ -1,11 +1,14 @@
 package com.ski.bootstart.algorithm;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.*;
 
 /**
  * @author ski
  * @date 2024/1/3
  */
+@Slf4j
 public class NQueen {
 
     public List<List<String>> solveNQueens(int n) {
