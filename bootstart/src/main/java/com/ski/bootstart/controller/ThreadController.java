@@ -41,6 +41,7 @@ public class ThreadController {
             // 执行业务耗时 3s
             Thread.sleep(3000);
             log.info(LocalDateTime.now() + "--->子任务线程(" + Thread.currentThread().getName() + ")");
+            doBusiness();
             return result;
         };
         log.info(LocalDateTime.now() + "--->主线程结束");
