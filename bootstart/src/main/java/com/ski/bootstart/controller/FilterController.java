@@ -22,9 +22,9 @@ public class FilterController {
 
     @RequestMapping("test2")
     public Object test2() {
-        log.info("===========test");
-        log.warn("===========test");
-        log.error("===========test");
+        log.info("===========test2");
+        log.warn("===========test2");
+        log.error("===========test2");
         return "this is result";
     }
 }
