@@ -35,26 +35,25 @@ public class ThreadController {
      */
     @GetMapping("callable")
     public Callable<String> callable() {
-        log.info(LocalDateTime.now() + "--->主线程开始");
+        log.info("{}--->主线程开始", LocalDateTime.now());
         Callable<String> callable = () -> {
             String result = "return callable";
             // 执行业务耗时 3s
             Thread.sleep(3000);
-            log.info(LocalDateTime.now() + "--->子任务线程(" + Thread.currentThread().getName() + ")");
+            log.info("{}--->子任务线程({})", LocalDateTime.now(), Thread.currentThread().getName());
             doBusiness();
             return result;
         };
-        log.info(LocalDateTime.now() + "--->主线程结束");
+        log.info("{}--->主线程结束", LocalDateTime.now());
         return callable;
     }
 
-    public static String doBusiness() {
+    public static void doBusiness() {
         // 执行业务耗时 10s
         try {
             TimeUnit.SECONDS.sleep(10);
         } catch (InterruptedException e) {
             log.error("doBusiness something error:", e);
         }
-        return UUID.randomUUID().toString();
     }
 }
